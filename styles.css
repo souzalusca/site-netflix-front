@@ -1,0 +1,434 @@
+/*------GERAL-----*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+body{
+    overflow-x: hidden;
+}
+header {
+    width: 100%;
+    position: absolute;
+    padding: 50px;
+    background:linear-gradient(180deg,rgba(0,0,0,.7) 10%,transparent);
+    top: 0;
+    z-index: 2;
+
+}
+#header-img {
+    width: 170px;
+    margin-top: 0px;
+}
+.btn-custom-white{
+    background-color: #fff;
+    margin-left: -180px;
+    margin-top: 60px;
+}
+.btn-custom-translucent{
+ background-color: rgba(255, 255, 255, 0.2);
+ color: #fff;
+ margin-top: 60px;
+}
+.btn-custom-translucent:hover{
+    color: #fff;    
+    opacity: 0.8;
+}
+.btn-custom-white:hover{
+    color: #fff;
+    opacity: 0.8;
+}
+.btn-custom-round{
+    padding: 5px 9px !important;
+}
+.opacity-50 {
+    opacity: 0.5 !important;
+}
+/*----- CADASTRO -----*/
+section.bg_cadastro{
+    position: fixed; /* Alterada para 'fixed' para cobrir toda a tela */
+    top: 0; /* Ajustado o topo para 0 */
+    left: 0; /* Ajustado a esquerda para 0 */
+    width: 100%;
+    height: 100%;
+    background-image: url(assets/background-cadastro.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#caixa_cadastro{
+        background: rgba(0, 0, 0, 0.726); 
+        padding: 20px;
+        margin-top: 0px; /* Ajuste para a posição desejada */
+        position: absolute;
+        left: 310px;
+        transform: translateX(-50%);
+        height: 650px;
+        width: 600px; /* Ajuste a largura da caixa de login conforme necessário */
+        margin-top: 150px;    
+}
+#caixa_cadastro h1.text-white {
+    position: relative; /* Garante que a posição seja relativa */
+    left: 25%; /* Move o elemento para a metade da largura do contêiner pai */
+    transform: translateX(-50%); /* Reposiciona o elemento para a esquerda em 50% de sua própria largura */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    margin-top: 30px; /* Define a margem superior */
+}
+section #caixa_cadastro form{
+        position: relative;
+        background-position: center;
+        z-index: 1;
+        top: 60px;
+        width: 450px;
+        height: 450px;
+        margin: 0 auto;
+          
+}
+div img.logo-face-cadastro{
+    width: 18px;
+    color: #fff;
+}
+div img a{
+    
+    color: #fff;
+}
+
+
+/*----- LOGIN ----*/
+
+section.bg_filmes {
+    position: fixed; /* Alterada para 'fixed' para cobrir toda a tela */
+    top: 0; /* Ajustado o topo para 0 */
+    left: 0; /* Ajustado a esquerda para 0 */
+    width: 100%;
+    height: 100%;
+    background-image: url(assets/background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+}
+#caixa_login h1.text-white {
+    position: relative; /* Garante que a posição seja relativa */
+    left: 20%; /* Move o elemento para a metade da largura do contêiner pai */
+    transform: translateX(-50%); /* Reposiciona o elemento para a esquerda em 50% de sua própria largura */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    margin-top: 80px; /* Define a margem superior */
+}
+
+
+form {
+    position: relative;
+    background-position: center;
+    z-index: 1;
+    width: 450px;
+    height: 450px;
+    top: 100px;
+    margin: 0 auto;
+    
+    
+}
+.btn-login {
+    width: 100%;
+    height: 50px;
+    border: none;
+    background: red;
+    color: #ffffff;
+    text-decoration: none; /* Remove a decoração de link */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-login:hover {
+    background: darkred; /* Mudança de cor ao passar o mouse */
+}
+
+
+
+    #caixa_login {
+        background: rgba(0, 0, 0, 0.726); 
+        padding: 20px;
+        margin-top: 150px; /* Ajuste para a posição desejada */
+        position: absolute;
+        left: 310px;
+        transform: translateX(-50%);
+        width: 600px; /* Ajuste a largura da caixa de login conforme necessário */
+    }
+    
+
+
+
+.text-end a {
+    text-decoration: none;
+}
+.text-end a:hover {
+    text-decoration: underline;
+}
+.form-control{
+    background-color: rgb(105, 99, 99);
+    border: none;
+    
+}
+input.form-control::placeholder {
+    color: #ffffff54; /* Substitua pela cor desejada */
+}
+.form-control::placeholder,
+.form-control:focus {
+    color: #ffffff; /* Substitua pela cor desejada */
+    background-color: rgb(105, 99, 99); /* Substitua pela cor desejada */
+    border: none; /* Opcional: remover a borda quando em foco */
+    outline: none; /* Opcional: remover a borda de foco padrão */
+}
+.logo-face{
+    width: 17px;
+    
+    
+}
+#text-facebook{
+    text-decoration: none;
+    
+}
+.text-white-50{
+    text-decoration: none;
+    font-size: 18px;
+    font-style: bold;
+}
+.text-white-50:hover{
+    text-decoration: underline;
+}
+
+
+/* -------HOME-------*/
+.logo-home{
+    width: 170px;
+}
+.menu_list{
+    list-style: none;
+    padding-left: 0;
+    padding-top: 8px;
+    font-size: 20px;
+}
+
+.menu_list li {
+    display: inline-block;
+    margin-left: 15px;
+}
+.menu_list li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+#hero {
+    height: 870px;
+    width: 100%;
+    background-image: url(assets/DaTT_Unit_08360r-2500x1667\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+}
+
+#hero::after{
+    content: '';
+    width: 100%;
+    height: 350px;
+    display: block;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    position: absolute;
+    left: 0;
+    z-index: 2;
+    top: calc(870px - 350px);
+}
+#hero_infos{
+    padding: 0;
+    margin-top: 260px;
+    z-index: 3;
+    position: relative;
+    bottom: 200px;
+}
+
+
+.text-white-home{
+    color: #ffffff;
+    margin-left: -180px;
+    
+    
+}
+div h1.text-white-home{
+    margin-top: -300px; 
+    margin-left: -180px;
+
+}
+.logo{
+    width: 1200px;
+    margin-left: -500px;
+    margin-top: -100px;
+    
+    
+}
+#hero_infos h1 img{
+    width: 70px;
+    margin-top: 0px;
+    margin-left: -12px;
+}
+#main-content{
+    margin-top: 1000px;
+
+}
+section h5{
+    margin-left: 70px;
+    margin-bottom: -30px;
+}
+
+
+.filme_lista{
+    overflow-x: hidden;
+    list-style: none;
+    white-space: nowrap;
+    padding: 20px 0;
+    display: block;
+
+}
+
+.filme_lista::-webkit-scrollbar{
+    display: none;
+}
+
+.filme{
+    display: inline-block;
+    width: 300px;
+    margin-right: 10px;
+    border-radius: 3px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.filme:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    z-index: 999;
+    transform: 0.5s;
+}
+.filme:hover .filme_info {
+    transform: scale(1);
+    transition: 0.5s;
+}
+.filme:first-child{
+    margin-left: 70px;
+}
+.filme_info{
+    background-color: #171717;
+    padding: 10px;
+    height: 100px;
+    width: 100%;
+    transform: scale(0);
+
+}
+.filme_info .col-12{
+    margin-top: 5px;
+}
+
+.filme_info .col-12:first-child{
+    margin-bottom: 20px;
+}
+.filme_info p{
+    color: #7E7B7B;
+    font-size: 12px;
+
+}
+.filme_info p text {
+    color: #fff;
+    
+}
+section{
+    margin-bottom: -100px;
+    position: relative;
+    bottom: 70px;
+}
+section:hover{
+    z-index: 9;
+}
+/* Adiciona estilo às setas */
+/* Adiciona estilo às setas */
+.arrow {
+    position: absolute;
+    top: 31%;
+    transform: translateY(-70%);
+    background-color: rgba(255, 255, 255, 0); /* Cor de fundo das setas */
+    color: white; /* Cor do texto das setas */
+    font-size: 50px;
+    width: 70px; /* Largura das setas */
+    height: 200px; /* Altura das setas */
+    cursor: pointer;
+    display: none; /* Inicialmente oculta */
+    z-index: 1; /* Garante que as setas fiquem acima da lista */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.arrow:hover {
+    background-color: rgba(248, 248, 248, 0); /* Cor de fundo das setas ao passar o mouse */
+}
+
+.left-arrow {
+    position: absolute;
+    top: 31%;
+    transform: translateY(-56%);
+    background-color: rgba(255, 255, 255, 0); /* Cor de fundo das setas */
+    color: white; /* Cor do texto das setas */
+    font-size: 80px;
+    width: 70px; /* Largura das setas */
+    height: 170px; /* Altura das setas */
+    cursor: pointer;
+    display: none; /* Inicialmente oculta */
+    z-index: 1; /* Garante que as setas fiquem acima da lista */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.left-arrow::before {
+    position: relative;
+    background-position-y: center;
+}
+
+
+
+
+.right-arrow {
+    right: 0;
+    height: 170px;
+    
+}
+
+/* Adiciona margem às setas para separá-las das listas de filmes */
+.left-arrow,
+.right-arrow {
+    margin-top: 59px; /* Ajuste conforme necessário */
+    font-size: 80px;
+}
+section:hover .arrow {
+    display: flex;
+}
+section .arrow {
+    display: none;
+}
