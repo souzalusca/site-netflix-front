@@ -294,7 +294,7 @@ div h1.text-white-home{
 }
 section h5{
     margin-left: 70px;
-    margin-bottom: -30px;
+    margin-bottom: 20px;
 }
 
 
@@ -431,4 +431,202 @@ section:hover .arrow {
 }
 section .arrow {
     display: none;
+}
+/* MODAL */
+
+.modal-dialog, .modal-content{
+    background: #171717;
+    
+}
+.modal-dialog{
+    max-width: 600px;
+
+}
+.modal-hero{
+    height: 400px;
+    background-image: url(assets/DaTT_Unit_08360r-2500x1667\ \(1\).jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 40px;
+    margin-bottom: 30px;
+
+}
+.modal-hero::after{
+    content: '';
+    width: 100%;
+    height: 200px;
+    display: block;
+    background: linear-gradient(180deg, rgba(23, 23 ,23,0) 0%, #171717 100%);
+    position: absolute;
+    left: 0;
+    margin-top: -231px;
+    z-index: 1;
+}
+.modal-hero img {
+    width: 300px;
+    margin-top: 80px;
+    margin-left: -40px;
+    position: relative;
+    z-index: 2;
+}
+.modal-hero-infos{
+    position: relative;
+    z-index: 2;
+}
+.modal-hero-infos button:first-child{
+    margin-right: 10px;
+    
+}
+.modal-hero-infos button{
+    margin-bottom: 60px;
+    margin-left: 0px;
+    
+}
+.modal-hero a:hover{
+    background: #ffffff86;
+}
+.modal-hero button:hover{
+    background: #ffffff86;
+}
+.filme-descricao{
+    font-size: 15px;
+    color: #fff;
+}
+.filme-elenco {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.26);
+}
+.filme-elenco text{
+    color: #fff;
+}
+#lista_episodios{
+    list-style: none;
+    padding: 0;
+}
+#lista_episodios li{
+    padding: 20px;
+}
+#lista_episodios li p{
+    font-size: 13px;
+    color: #ffffff44;
+}
+#lista_episodios li:hover {
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+
+
+.form-control-modal{
+    background-color: rgb(37, 37, 37);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    font-size: 20px;
+    padding: 8px;
+    position: relative;
+    
+}
+/* Aumentar o tamanho da seta do select */
+.form-control-modal {
+    -webkit-appearance: none; /* Remove a aparência padrão do select (apenas para navegadores WebKit) */
+    -moz-appearance: none; /* Remove a aparência padrão do select (apenas para navegadores Gecko) */
+    appearance: none; /* Remove a aparência padrão do select */
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23fff" height="40" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>'); /* Substitua 'sua-imagem-de-seta.svg' pelo caminho da sua imagem de seta */
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 40px; /* Ajuste conforme necessário para acomodar o tamanho da seta */
+}
+.form-control-modal::after {
+    content: ""; /* Adiciona o pseudo-elemento */
+    position: absolute;
+    top: 50%; /* Posiciona a seta verticalmente */
+    right: 10px; /* Posiciona a seta à direita */
+    transform: translateY(-50%); /* Centraliza verticalmente a seta */
+    width: 150px; 
+    height: 150px; 
+    border-left: 8px solid transparent; /* Tamanho e cor da seta */
+    border-right: 8px solid transparent; /* Tamanho e cor da seta */
+    border-top: 20px solid white; /* Tamanho e cor da seta */
+}
+
+/*------MODAL ALIVE-------*/
+.modal-hero-alive{
+    height: 400px;
+    background-image: url(assets/alive.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 40px;
+    margin-bottom: 30px;
+
+}
+.modal-hero-infos-alive{
+    position: relative;
+    z-index: 2;
+    margin-top: 220px;
+    margin-left: 170px;
+}
+.modal-hero-infos-alive button{
+    margin-bottom: 60px;
+    margin-right: 10px;
+
+}
+.modal-hero-alive a:hover{
+    background: #ffffff86;
+}
+.modal-hero-alive button:hover{
+    background: #ffffff86;
+}
+.modal-hero-alive::after{
+    content: '';
+    width: 100%;
+    height: 200px;
+    display: block;
+    background: linear-gradient(180deg, rgba(23, 23 ,23,0) 0%, #171717 100%);
+    position: absolute;
+    left: 0;
+    margin-top: -229px;
+    z-index: 1;
+}
+/*-------MODAL ERA UMA VEZ----------*/
+.modal-hero-eraumavez{
+    height: 400px;
+    background-image: url(assets/eraumavez.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 40px;
+    margin-bottom: 30px;
+
+}
+.modal-hero-infos-eraumavez{
+    position: relative;
+    z-index: 2;
+    margin-top: 220px;
+    margin-left: 170px;
+}
+.modal-hero-infos-eraumavez button{
+    margin-bottom: 60px;
+    margin-right: 10px;
+
+}
+.modal-hero-eraumavez a:hover{
+    background: #ffffff86;
+}
+.modal-hero-eraumavez button:hover{
+    background: #ffffff86;
+}
+.modal-hero-eraumavez::after{
+    content: '';
+    width: 100%;
+    height: 200px;
+    display: block;
+    background: linear-gradient(180deg, rgba(23, 23 ,23,0) 0%, #171717 100%);
+    position: absolute;
+    left: 0;
+    margin-top: -229px;
+    z-index: 1;
 }
